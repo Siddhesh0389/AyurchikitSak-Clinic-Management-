@@ -1,0 +1,67 @@
+/* src/assets/styles/theme.css */
+:root {
+  --primary-color: #166534;
+  --secondary-color: #15803d;
+  --accent-color: #f97316;
+  --background-light: #f8faf8;
+  --text-primary: #1e293b;
+  --text-secondary: #475569;
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --info: #3b82f6;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #166534;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #15803d;
+}
+
+/* Smooth transitions */
+* {
+  transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Loading animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-custom {
+  animation: spin 1s linear infinite;
+}
+
+/* Hover effects */
+.hover-lift {
+  transition: transform 0.2s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+}
+
+/* Gradient backgrounds */
+.gradient-ayurvedic {
+  background: linear-gradient(135deg, #166534 0%, #15803d 50%, #166534 100%);
+}
+
+.gradient-warm {
+  background: linear-gradient(135deg, #f97316 0%, #fb923c 100%);
+}
